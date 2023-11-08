@@ -1,0 +1,45 @@
+header {
+    position: sticky;
+    padding-top: 32px;
+    top: 0;
+    transition: 0.3s;
+    left: 0;
+    right: 0;
+    background: #F0F0F0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #213555;
+}
+
+.shrink {
+    padding-top: 10px;
+}
+
+
+#main_menu {
+    text-align: center;
+}
+
+
+#main_menu li {
+    display: inline-block;
+    margin-top: 2.5%;
+    margin-right: 5vw;
+    font-size: 2.3vh;
+    font-weight: 500;
+}
+
+/* #main_menu li:hover {
+    
+    cursor: url('/img/c2.png') 2 2, pointer;
+} */
+
+a {
+    font-family: 'Pretendard';
+    font-weight: bold;
+    color: #213555;
+    text-decoration: none;
+}

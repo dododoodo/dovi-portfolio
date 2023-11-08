@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프론트엔드 김도연-포트폴리오</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/loading.css">
+</head>
+<body>
+    <div class="wrap">
+        <header id="myHeader">
+            <ul id="main_menu">
+                <li><a href="#sec1" id="li1">Me Manual</a></li>
+                <li><a href="#sec2" id="li2">Use</a></li>
+                <li><a href="#sec3" id="li3">From now</a></li>
+            </ul>
+        </header>
+        
+
+
+        
+
+
+
+    </div>
+    <script src="./js/index.js"></script>
+    <script>
+        // Get the header
+        var header = document.getElementById("myHeader");
+        
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+        
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("shrink");
+          } else {
+            header.classList.remove("shrink");
+          }
+        }
+        
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        </script>
+</body>
+</html>
